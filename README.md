@@ -45,7 +45,18 @@ All commands are run from the root of the project, from a terminal:
 
 [Astro]('https://docs.astro.build/en/concepts/why-astro/'): Astro is an all-in-one web framework for building fast, content-focused websites.
 
-[prettier-plugin-astro](): Official Prettier plugin adding support for formatting .astro files
+[@astrojs/image](https://docs.astro.build/en/guides/integrations-guide/image/): For image optimization, with the use of `<Image />` and `<Picture>` components as well as a basic image transformer.
+
+For the best development experience, add the integrations type definitions to your project’s env.d.ts file.
+
+```
+// Replace `astro/client` with `@astrojs/image/client`
+/// <reference types="@astrojs/image/client" />
+```
+
+[sharp](https://sharp.pixelplumbing.com/): High speed Node.js module used as a better image transformer for `@astrojs/image`.
+
+[prettier-plugin-astro](): Official Prettier plugin adding support for formatting .astro files.
 
 Add the following settings to your VS Code configuration so VS Code is aware that Prettier can be used for Astro files:
 
@@ -68,3 +79,5 @@ module.exports = {
   pluginSearchDirs: false,
 };
 ```
+
+[eslint-plugin-astro](https://ota-meshi.github.io/eslint-plugin-astro/user-guide/): If you write TypeScript in Astro components, you also need to install the `@typescript-eslint/parser`, if you want to use the rules for checking accessibility (A11Y), you also need to install `eslint-plugin-jsx-a11y`
