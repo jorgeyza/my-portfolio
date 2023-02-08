@@ -1,7 +1,12 @@
+import path from "path";
+import { fileURLToPath } from "url";
+
 // https://astro.build/config
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   integrations: [
@@ -13,7 +18,6 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        // eslint-disable-next-line no-undef
         "@": path.resolve(__dirname, "./src"),
       },
     },
