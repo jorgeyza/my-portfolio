@@ -1,6 +1,22 @@
-<p class="text-3xl font-bold">Hi</p>
-<p class="text-3xl font-bold">I’m Jorge,</p>
-<p class="text-3xl font-bold">Web Developer</p>
-<p>Full Stack Developer / I love creating and learning 🎓</p>
-<button>Download CV</button>
-<button>Say hi!</button>
+---
+import { Image } from "@astrojs/image/components";
+import documentSVG from "@/assets/icons/document-icon.svg";
+import mailSVG from "@/assets/icons/mail-icon.svg";
+---
+
+<div class="font-[Raleway]">
+  <p class="text-xl font-bold md:text-3xl">Hi</p>
+  <p class="text-xl font-bold md:text-3xl">I’m Jorge,</p>
+  <p class="text-xl font-bold md:text-3xl">Web Developer</p>
+</div>
+<p class="text-purple-300">Full Stack Developer / I love creating and learning 🎓</p>
+<div class="flex gap-x-2">
+  <button
+    class="inline-flex transform gap-x-2 rounded-lg border border-transparent bg-cyan-300 px-4 py-2 text-sm font-bold text-slate-900 transition-colors duration-300 hover:bg-cyan-400 focus:outline-none"
+    ><Image src={documentSVG} alt="" width={20} height={20} />Download CV</button
+  >
+  <button
+    class="inline-flex transform gap-x-2 rounded-lg border border-cyan-300 px-4 py-2 text-sm font-bold text-slate-50 transition-colors duration-300 hover:bg-cyan-900 focus:outline-none"
+    ><Image src={mailSVG} alt="" width={20} height={20} />Say hi!</button
+  >
+</div>
