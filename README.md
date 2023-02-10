@@ -6,27 +6,26 @@ pnpm dev
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
 ```
 /
 ├── public/
 │   └── favicon.svg
 ├── src/
+│   ├── assets/
+│   │   └── images
 │   ├── components/
-│   │   └── Card.astro
+│   │   └── Navbar.astro
+│   ├── sections/
+│   │   └── Skills.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
 │       └── index.astro
-└── package.json
+├── package.json
+└── ...config files
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
@@ -65,6 +64,8 @@ Add the following settings to your VS Code configuration so VS Code is aware tha
   "prettier.documentSelectors": ["**/*.astro"]
 }
 ```
+
+[@radix-ui/react-dialog](https://www.radix-ui.com/docs/primitives/components/dialog): Radix Primitives is a low-level UI component library. I used their dialog component.
 
 [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss): A Prettier plugin for Tailwind CSS v3.0+ that automatically sorts classes based on their recommended class order. `prettier-plugin-tailwindcss` _must_ be loaded last, meaning Prettier auto-loading needs to be disabled. You can do this by setting the `pluginSearchDirs` option to `false` and then listing each of your Prettier plugins in the `plugins` array:
 
