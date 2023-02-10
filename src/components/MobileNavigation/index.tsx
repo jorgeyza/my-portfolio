@@ -29,7 +29,7 @@ const ReactMobileIcon = () => {
                 {link.label}
               </a>
             ))}
-            <button className="inline-flex transform gap-x-2 rounded-lg border border-transparent bg-cyan-300 px-2 py-2 text-sm font-bold text-slate-900 shadow-md transition-colors duration-300 hover:bg-cyan-400 focus:outline-none">
+            <button className="inline-flex gap-x-2 rounded-lg border border-transparent bg-cyan-300 px-2 py-2 text-sm font-bold text-slate-900 shadow-md transition-colors duration-300 hover:bg-cyan-400 focus:outline-none">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
                 <path
                   stroke="#022C43"
