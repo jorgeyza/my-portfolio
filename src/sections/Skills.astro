@@ -3,16 +3,18 @@ import { Image } from "@astrojs/image/components";
 import skills from "@/assets/skills";
 ---
 
-<h2 class="text-center text-2xl">Skills</h2>
-<div class="flex flex-wrap">
-  {
-    skills.map((skill) => (
-      <div>
-        <div class="h-[60px] w-[60px] rounded-full bg-slate-50">
-          <Image src={skill.src} alt={skill.alt} width={skill.width} height={skill.height} />
+<section class="mt-5 px-5">
+  <h2 class="text-center text-2xl font-bold">Skills</h2>
+  <div class="mt-5 flex flex-wrap justify-center gap-2">
+    {
+      skills.map((skill) => (
+        <div class="flex flex-col items-center gap-y-1">
+          <div class="flex h-[80px] w-[80px] items-center justify-center rounded-full bg-slate-50">
+            <Image src={skill.src} alt={skill.alt} width={40} height={40} />
+          </div>
+          <p class="text-sm">{skill.label}</p>
         </div>
-        <p>{skill.label}</p>
-      </div>
-    ))
-  }
-</div>
+      ))
+    }
+  </div>
+</section>
