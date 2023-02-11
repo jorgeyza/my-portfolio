@@ -8,5 +8,5 @@ import MobileNavigation from "@/components/MobileNavigation";
   <div class="h-[48px] w-[42px]">
     <Image src={logoSVG} alt="" width={42} height={48} />
   </div>
-  <MobileNavigation client:load />
+  <MobileNavigation client:only="react" />
 </nav>
