@@ -4,7 +4,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import Hamburger from "./Hamburger";
 import { LINKS } from "@/configuration";
 
-const ReactMobileIcon = () => {
+const MobileNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Dialog.Root open={isOpen} onOpenChange={setIsOpen}>
@@ -55,4 +55,4 @@ const ReactMobileIcon = () => {
   );
 };
 
-export default ReactMobileIcon;
+export default MobileNavigation;
