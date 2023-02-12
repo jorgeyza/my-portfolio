@@ -1,7 +1,9 @@
 ---
 import { Image } from "@astrojs/image/components";
+
 import logoSVG from "@/assets/Logo.svg";
 import MobileNavigation from "@/components/MobileNavigation";
+import { LINKS } from "@/configuration";
 ---
 
 <nav
@@ -10,5 +12,16 @@ import MobileNavigation from "@/components/MobileNavigation";
   <div class="h-[48px] w-[42px]">
     <Image src={logoSVG} alt="" width={42} height={48} />
   </div>
-  <MobileNavigation client:only="react" />
+  <div class="md:hidden">
+    <MobileNavigation client:only="react" />
+  </div>
+  <ul class="hidden gap-x-10 md:flex" role="navigation">
+    {
+      LINKS.map((link) => (
+        <a class="hover:text-cyan-300" href={link.href}>
+          {link.label}
+        </a>
+      ))
+    }
+  </ul>
 </nav>
