@@ -12,3 +12,5 @@ export const LINKS = [
     href: "#contact",
   },
 ];
+
+export const email = "jorgeyzadev@gmail.com";

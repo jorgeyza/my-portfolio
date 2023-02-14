@@ -1,0 +1,17 @@
+---
+import MailIllustration from "~/assets/mail-illustration.astro";
+import MailSVG from "~/assets/icons/mail-icon.astro";
+
+import { email } from "~/configuration";
+---
+
+<section id="contact" class="mt-10 flex flex-col items-center gap-y-5">
+  <div>
+    <MailIllustration />
+  </div>
+  <h2 class="text-2xl font-bold">Let's get in contact!</h2>
+  <a
+    class="inline-flex gap-x-2 rounded-lg border border-cyan-300 px-6 py-3 font-[Raleway] text-sm text-cyan-300 shadow-md transition-colors duration-300 hover:bg-cyan-900 focus:outline-none"
+    href={`mailto:${email}`}><MailSVG />Say hi!</a
+  >
+</section>

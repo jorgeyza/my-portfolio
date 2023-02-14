@@ -1,6 +1,8 @@
 ---
 import DocumentSVG from "~/assets/icons/document-icon.astro";
 import MailSVG from "~/assets/icons/mail-icon.astro";
+
+import { email } from "~/configuration";
 ---
 
 <section id="home" class="mt-5 px-5">
@@ -17,9 +19,9 @@ import MailSVG from "~/assets/icons/mail-icon.astro";
       target="_blank"
       rel="noopener noreferrer"><DocumentSVG />Resume</a
     >
-    <button
-      class="inline-flex gap-x-2 rounded-lg border border-cyan-300 px-2 py-2 text-sm font-bold text-slate-50 shadow-md transition-colors duration-300 hover:bg-cyan-900 focus:outline-none"
-      ><MailSVG />Say hi!</button
+    <a
+      class="inline-flex gap-x-2 rounded-lg border border-cyan-300 px-2 py-2 text-sm text-cyan-300 shadow-md transition-colors duration-300 hover:bg-cyan-900 focus:outline-none"
+      href={`mailto:${email}`}><MailSVG />Say hi!</a
     >
   </div>
 </section>
