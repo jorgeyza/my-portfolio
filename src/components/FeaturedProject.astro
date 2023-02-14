@@ -1,8 +1,10 @@
 ---
 import { Image } from "@astrojs/image/components";
 
-import GithubSVG from "@/assets/icons/github-icon.astro";
-import LinkSVG from "@/assets/icons/external-link-icon.astro";
+import GithubSVG from "~/assets/icons/github-icon.astro";
+import LinkSVG from "~/assets/icons/external-link-icon.astro";
+
+import { findImage } from "~/utils/images";
 
 interface Props {
   title: string;
@@ -19,6 +21,7 @@ interface Props {
 }
 
 const { title, description, tags, image, links } = Astro.props;
+const imageSrc = await findImage(image.url);
 ---
 
 <div class="flex flex-col items-center gap-y-2">
@@ -44,6 +47,6 @@ const { title, description, tags, image, links } = Astro.props;
     </div>
   </div>
   <a href={links.site} target="_blank">
-    <Image src={image.url} alt={image.alt} width={280} height={150} />
+    <Image src={imageSrc} alt={image.alt} width={280} height={150} />
   </a>
 </div>
