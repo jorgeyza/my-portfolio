@@ -1,0 +1,36 @@
+---
+import FeaturedProject from "@/components/FeaturedProject.astro";
+import StandardProject from "@/components/StandardProject.astro";
+
+import { getCollection } from "astro:content";
+const allProjects = await getCollection("projects");
+const featuredProjects = allProjects.filter((project) => project.data.isFeatured);
+const standardProjects = allProjects.filter((project) => !project.data.isFeatured);
+---
+
+<section id="projects" class="mt-10 px-5">
+  <h2 class="text-center font-[Raleway] text-2xl font-bold">Projects</h2>
+  <div class="mt-5 flex flex-col gap-y-10">
+    {
+      featuredProjects.map((project) => (
+        <FeaturedProject
+          description={project.data.description}
+          title={project.data.title}
+          tags={project.data.tags}
+          image={project.data.image}
+          links={project.data.links}
+        />
+      ))
+    }
+    {
+      standardProjects.map((project) => (
+        <StandardProject
+          description={project.data.description}
+          title={project.data.title}
+          tags={project.data.tags}
+          links={project.data.links}
+        />
+      ))
+    }
+  </div>
+</section>
