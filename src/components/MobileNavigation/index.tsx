@@ -2,7 +2,7 @@ import { useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 
 import Hamburger from "./Hamburger";
-import { LINKS } from "@/configuration";
+import { LINKS } from "~/configuration";
 
 const MobileNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ const MobileNavigation = () => {
           <Dialog.Title className="text-lg font-bold">Navigation Menu</Dialog.Title>
           <ul className="mt-20 flex flex-col items-center gap-y-4" role="navigation">
             {LINKS.map((link) => (
-              <a className="hover:text-cyan-300" href={link.href}>
+              <a key={link.label} className="hover:text-cyan-300" href={link.href}>
                 {link.label}
               </a>
             ))}
