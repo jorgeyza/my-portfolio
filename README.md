@@ -4,27 +4,6 @@
 pnpm dev
 ```
 
-## 🚀 Project Structure
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── assets/
-│   │   └── images
-│   ├── components/
-│   │   └── Navbar.astro
-│   ├── sections/
-│   │   └── Skills.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-├── package.json
-└── ...config files
-```
-
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
 ## 🧞 Commands
@@ -82,3 +61,7 @@ module.exports = {
 ```
 
 [eslint-plugin-astro](https://ota-meshi.github.io/eslint-plugin-astro/user-guide/): If you write TypeScript in Astro components, you also need to install the `@typescript-eslint/parser`, if you want to use the rules for checking accessibility (A11Y), you also need to install `eslint-plugin-jsx-a11y`
+
+[@astrojs/partytown](https://docs.astro.build/en/guides/integrations-guide/partytown/): To send the loading of Google Analytics script to a web worker so it does not impact the page loading time.
+
+[astro-seo](https://github.com/jonasmerlin/astro-seo): This Astro component makes it easy to add tags that are relevant for search engine optimization (SEO).
