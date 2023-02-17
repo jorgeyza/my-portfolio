@@ -25,7 +25,12 @@ const MobileNavigation = () => {
           <Dialog.Title className="text-lg font-bold">Navigation Menu</Dialog.Title>
           <ul className="mt-20 flex flex-col items-center gap-y-4" role="navigation">
             {NAV_LINKS.map((link) => (
-              <a key={link.label} className="hover:text-cyan-300" href={link.href}>
+              <a
+                key={link.label}
+                className="hover:text-cyan-300"
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+              >
                 {link.label}
               </a>
             ))}
