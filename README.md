@@ -1,5 +1,7 @@
 # Jorge Portfolio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d2b7d4d0-3783-45f3-aaac-d184fa0ef09e/deploy-status)](https://app.netlify.com/sites/jorge-my-portfolio/deploys)
+
 ```
 pnpm dev
 ```
