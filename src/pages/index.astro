@@ -9,6 +9,8 @@ import Home from "~/sections/Home.astro";
 import Skills from "~/sections/Skills.astro";
 import Projects from "~/sections/Projects.astro";
 import Contact from "~/sections/Contact.astro";
+
+import { GITHUB } from "~/configuration";
 ---
 
 <Layout>
@@ -21,5 +23,12 @@ import Contact from "~/sections/Contact.astro";
     <Projects />
     <Contact />
   </main>
-  <footer class="mt-20 text-center text-sm text-slate-300">Made by Jorge Eyzaguirre</footer>
+  <footer class="mt-20 flex justify-center text-center">
+    <div class="relative pb-1">
+      <a
+        class="after:bg-grad text-sm text-slate-300 duration-300 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gradient-to-r after:from-cyan-500 after:to-violet-500 after:transition-transform hover:text-cyan-200 hover:after:origin-bottom-left hover:after:scale-100"
+        href={GITHUB}>Made by Jorge Eyzaguirre</a
+      >
+    </div>
+  </footer>
 </Layout>
