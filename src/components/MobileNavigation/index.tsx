@@ -2,7 +2,7 @@ import { useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 
 import Hamburger from "./Hamburger";
-import { LINKS } from "~/configuration";
+import { NAV_LINKS } from "~/configuration";
 
 const MobileNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,14 +17,14 @@ const MobileNavigation = () => {
         </button>
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 animate-overlayShow bg-[rgb(0_0_0_/_0.7)] transition-opacity" />
+        <Dialog.Overlay className="fixed inset-0 bg-[rgb(0_0_0_/_0.7)] transition-opacity data-[state=closed]:animate-fadeOut data-[state=open]:animate-fadeIn" />
         <Dialog.Content
           aria-describedby={undefined}
-          className="fixed right-0 top-0 h-screen w-[200px] bg-slate-800 p-6 focus:outline-none"
+          className="fixed right-0 top-0 h-screen w-[200px] bg-slate-800 p-6 transition-opacity focus:outline-none data-[state=closed]:animate-moveLtoR data-[state=open]:animate-moveRtoL"
         >
           <Dialog.Title className="text-lg font-bold">Navigation Menu</Dialog.Title>
           <ul className="mt-20 flex flex-col items-center gap-y-4" role="navigation">
-            {LINKS.map((link) => (
+            {NAV_LINKS.map((link) => (
               <a key={link.label} className="hover:text-cyan-300" href={link.href}>
                 {link.label}
               </a>

@@ -4,13 +4,28 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        overlayShow: {
+        fadeIn: {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },
         },
+        fadeOut: {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0 },
+        },
+        moveRtoL: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+        moveLtoR: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
       },
       animation: {
-        overlayShow: "overlayShow 1000ms cubic-bezier(0.16, 1, 0.3, 1)",
+        fadeIn: "fadeIn 300ms ease-out",
+        fadeOut: "fadeOut 300ms ease-in",
+        moveRtoL: "moveRtoL 300ms ease-in",
+        moveLtoR: "moveLtoR 300ms ease-out",
       },
     },
   },
