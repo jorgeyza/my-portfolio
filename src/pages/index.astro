@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 
 import Navbar from "~/components/Navbar.astro";
+import SideEmail from "~/components/SideElement/SideEmail.astro";
+import SideSocial from "~/components/SideElement/SideSocial.astro";
 
 import Home from "~/sections/Home.astro";
 import Skills from "~/sections/Skills.astro";
@@ -11,11 +13,13 @@ import Contact from "~/sections/Contact.astro";
 
 <Layout>
   <Navbar />
-  <main id="content">
+  <SideSocial />
+  <SideEmail />
+  <main class="flex flex-col gap-y-10 px-5 md:gap-y-20 lg:gap-y-40 lg:px-24" id="content">
     <Home />
     <Skills />
     <Projects />
     <Contact />
   </main>
-  <footer class="mt-20 text-center text-sm">Made by Jorge Eyzaguirre</footer>
+  <footer class="mt-20 text-center text-sm text-slate-300">Made by Jorge Eyzaguirre</footer>
 </Layout>

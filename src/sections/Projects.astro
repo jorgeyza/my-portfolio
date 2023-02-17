@@ -8,20 +8,23 @@ const featuredProjects = allProjects.filter((project) => project.data.isFeatured
 const standardProjects = allProjects.filter((project) => !project.data.isFeatured);
 ---
 
-<section id="projects" class="mt-10 px-5">
-  <h2 class="text-center font-[Raleway] text-2xl font-bold">Projects</h2>
-  <div class="mt-5 flex flex-col gap-y-10">
+<section id="projects" class="md:mt-10 lg:mt-20">
+  <h2 class="text-center font-[Raleway] text-2xl font-bold md:text-3xl lg:text-4xl">Projects</h2>
+  <div class="mt-5 flex flex-col gap-y-10 md:mt-10 md:gap-y-20">
     {
-      featuredProjects.map((project) => (
+      featuredProjects.map((project, index) => (
         <FeaturedProject
           description={project.data.description}
           title={project.data.title}
           tags={project.data.tags}
           image={project.data.image}
           links={project.data.links}
+          flexDirectionClass={index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"}
         />
       ))
     }
+  </div>
+  <div class="mt-20 grid grid-cols-[repeat(auto-fill,_280px)] justify-center gap-4">
     {
       standardProjects.map((project) => (
         <StandardProject
