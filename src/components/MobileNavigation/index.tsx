@@ -29,7 +29,12 @@ const MobileNavigation = () => {
                 {link.label}
               </a>
             ))}
-            <button className="inline-flex gap-x-2 rounded-lg border border-transparent bg-cyan-300 px-2 py-2 text-sm font-bold text-slate-900 shadow-md transition-colors duration-300 hover:bg-cyan-400 focus:outline-none">
+            <a
+              className="inline-flex gap-x-1 rounded-lg border border-transparent bg-cyan-300 px-2 py-2 text-sm text-slate-900 shadow-md transition-colors duration-300 hover:bg-cyan-400 focus:outline-none"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
                 <path
                   stroke="#022C43"
@@ -47,7 +52,7 @@ const MobileNavigation = () => {
                 />
               </svg>
               Resume
-            </button>
+            </a>
           </ul>
         </Dialog.Content>
       </Dialog.Portal>
