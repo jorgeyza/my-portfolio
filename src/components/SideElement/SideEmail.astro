@@ -1,0 +1,14 @@
+---
+import SideElement from "~/components/SideElement/index.astro";
+
+import { EMAIL } from "~/configuration";
+---
+
+<SideElement orientation="right">
+  <a
+    class="font-[Raleway] text-sm tracking-widest text-slate-300 transition-all duration-300 [writing-mode:vertical-rl] hover:-translate-y-1 hover:text-cyan-200"
+    href={`mailto:${EMAIL}`}
+  >
+    {EMAIL}
+  </a>
+</SideElement>

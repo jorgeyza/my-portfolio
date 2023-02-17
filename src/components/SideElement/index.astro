@@ -1,0 +1,20 @@
+---
+interface Props {
+  orientation: "left" | "right";
+}
+
+const { orientation } = Astro.props;
+
+let orientationClass;
+if (orientation === "left") {
+  orientationClass = "lg:left-[20px] xl:left-[40px]";
+} else if (orientation === "right") {
+  orientationClass = "lg:right-[20px] xl:right-[40px]";
+}
+---
+
+<div
+  class={`fixed bottom-0 hidden w-[40px] after:block after:w-[1px] after:h-[90px] after:mx-auto after:my-0 after:bg-slate-50 gap-y-8 lg:flex lg:flex-col lg:items-center ${orientationClass}`}
+>
+  <slot />
+</div>
