@@ -1,4 +1,4 @@
-export const LINKS = [
+export const NAV_LINKS = [
   {
     label: "Skills",
     href: "#skills",
