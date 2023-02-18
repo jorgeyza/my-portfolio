@@ -1,12 +1,12 @@
 ---
 title: Natours
-description: A web app for searching for the most relevant info about countries, using the REST Countries API. UI design by frontendmentor.io
-tags: [React, MongoDB, JavaScript, Jest, Express, TypeScript]
+description: Website for a fictional company that offers tours in the nature.
+tags: [HTML, CSS, Sass, GitHub Pages]
 image:
-  url: ~/assets/projects/kanban-task-manager.png
+  url: ~/assets/projects/natours.png
   alt: Screenshot of the web project
 links:
-  github: https://github.com/jorgeyza
-  site: https://jorgeyza.com
+  github: https://github.com/jorgeyza/natours
+  site: https://natours.jorgeyza.com/
 isFeatured: false
 ---

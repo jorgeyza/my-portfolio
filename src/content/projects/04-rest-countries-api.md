@@ -6,7 +6,7 @@ image:
   url: ~/assets/projects/kanban-task-manager.png
   alt: "Screenshot of the web project"
 links:
-  github: https://github.com/jorgeyza
+  github: https://github.com/jorgeyza/rest-countries-api-with-color-theme-switcher
   site: https://jorgeyza.com
 isFeatured: true
 ---

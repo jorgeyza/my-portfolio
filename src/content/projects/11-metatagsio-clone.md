@@ -1,12 +1,12 @@
 ---
 title: metatags.io clone
-description: A web app for searching for the most relevant info about countries, using the REST Countries API. UI design by frontendmentor.io
-tags: [React, MongoDB, JavaScript, Jest, Express, TypeScript]
+description: This is a partial clone of metatags.io frontend, a tool to debug and generate meta tag code for any website.
+tags: [NextJS, ChakraUI, TypeScript, Redux]
 image:
-  url: ~/assets/projects/kanban-task-manager.png
+  url: ~/assets/projects/metatags.png
   alt: Screenshot of the web project
 links:
-  github: https://github.com/jorgeyza
-  site: https://jorgeyza.com
+  github: https://github.com/jorgeyza/metatagsio-clone
+  site: https://metatags.jorgeyza.com/
 isFeatured: false
 ---

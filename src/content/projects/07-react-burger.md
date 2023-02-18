@@ -1,12 +1,12 @@
 ---
 title: React Burger
-description: A web app for searching for the most relevant info about countries, using the REST Countries API. UI design by frontendmentor.io
-tags: [React, MongoDB, JavaScript, Jest, Express, TypeScript]
+description: A web app that allows a user to login, customize a burger order, input the necessary delivery info, create the order and review previous orders.
+tags: [React, JavaScript, Firebase, Redux, Vite, React Router]
 image:
-  url: ~/assets/projects/kanban-task-manager.png
+  url: ~/assets/projects/react-burger.png
   alt: Screenshot of the web project
 links:
-  github: https://github.com/jorgeyza
-  site: https://jorgeyza.com
+  github: https://github.com/jorgeyza/react-burger
+  site: https://react-burger.jorgeyza.com/
 isFeatured: false
 ---
