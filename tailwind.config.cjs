@@ -20,12 +20,17 @@ module.exports = {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(100%)" },
         },
+        slideBg: {
+          "0%": { backgroundPosition: "0" },
+          "100%": { backgroundPosition: "20vw" },
+        },
       },
       animation: {
         fadeIn: "fadeIn 300ms ease-out",
         fadeOut: "fadeOut 300ms ease-in",
         moveRtoL: "moveRtoL 300ms ease-in",
         moveLtoR: "moveLtoR 300ms ease-out",
+        slideBg: "slideBg 2s linear alternate infinite;",
       },
     },
   },

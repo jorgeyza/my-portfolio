@@ -60,6 +60,10 @@ const imageSrc = await findImage(image.url);
     </div>
   </div>
   <a class="rounded-2xl md:basis-1/2" href={links.site} target="_blank">
-    <Image class="rounded-2xl" src={imageSrc} alt={image.alt} />
+    <div
+      class="rounded-2xl border md:w-[calc(100%-2px)] md:border-[2px] md:border-transparent md:bg-gradient-to-r md:from-cyan-200 md:via-violet-500 md:to-cyan-200 md:hover:animate-slideBg"
+    >
+      <Image class="rounded-2xl" src={imageSrc} alt={image.alt} />
+    </div>
   </a>
 </div>
