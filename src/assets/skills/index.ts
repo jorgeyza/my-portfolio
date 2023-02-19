@@ -1,3 +1,4 @@
+import astro from "~/assets/skills/astro.png";
 import chakraui from "~/assets/skills/chakraui.png";
 import css from "~/assets/skills/css.png";
 import cypress from "~/assets/skills/cypress.png";
@@ -15,6 +16,7 @@ import react from "~/assets/skills/react.png";
 import restapi from "~/assets/skills/restapi.png";
 import sass from "~/assets/skills/sass.png";
 import strapi from "~/assets/skills/strapi.png";
+import tailwind from "~/assets/skills/tailwind.png";
 import typescript from "~/assets/skills/typescript.png";
 
 const skills = [
@@ -24,9 +26,11 @@ const skills = [
   { src: typescript, alt: "typescript", label: "TypeScript" },
   { src: sass, alt: "sass", label: "Sass" },
   { src: chakraui, alt: "chakraui", label: "ChakraUI" },
+  { src: tailwind, alt: "tailwind", label: "Tailwind" },
   { src: cypress, alt: "cypress", label: "Cypress" },
   { src: react, alt: "react", label: "React" },
   { src: nextjs, alt: "nextjs", label: "NextJS" },
+  { src: astro, alt: "astro", label: "Astro" },
   { src: node, alt: "node", label: "NodeJS" },
   { src: graphql, alt: "graphql", label: "GraphQL" },
   { src: restapi, alt: "restapi", label: "REST API" },
