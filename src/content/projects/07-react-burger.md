@@ -8,5 +8,5 @@ image:
 links:
   github: https://github.com/jorgeyza/react-burger
   site: https://react-burger.jorgeyza.com/
-isFeatured: false
+isFeatured: true
 ---

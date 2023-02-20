@@ -8,5 +8,5 @@ image:
 links:
   github: https://github.com/jorgeyza
   site: https://jorgeyza.com
-isFeatured: true
+isFeatured: false
 ---

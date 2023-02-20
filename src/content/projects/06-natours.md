@@ -8,5 +8,5 @@ image:
 links:
   github: https://github.com/jorgeyza/natours
   site: https://natours.jorgeyza.com/
-isFeatured: false
+isFeatured: true
 ---

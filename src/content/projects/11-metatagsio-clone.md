@@ -8,5 +8,5 @@ image:
 links:
   github: https://github.com/jorgeyza/metatagsio-clone
   site: https://metatags.jorgeyza.com/
-isFeatured: false
+isFeatured: true
 ---
