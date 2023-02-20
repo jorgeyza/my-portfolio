@@ -4,8 +4,12 @@ import StandardProject from "~/components/StandardProject.astro";
 
 import { getCollection } from "astro:content";
 const allProjects = await getCollection("projects");
-const featuredProjects = allProjects.filter((project) => project.data.isFeatured);
-const standardProjects = allProjects.filter((project) => !project.data.isFeatured);
+const featuredProjects = allProjects.filter(
+  (project) => project.data.isFeatured && project.data.shouldShow
+);
+const standardProjects = allProjects.filter(
+  (project) => !project.data.isFeatured && project.data.shouldShow
+);
 ---
 
 <section id="projects" class="md:mt-10 lg:mt-20">
