@@ -23,7 +23,7 @@ const MobileNavigation = () => {
           className="fixed right-0 top-0 h-screen w-[200px] bg-slate-800 p-6 transition-opacity focus:outline-none data-[state=closed]:animate-moveLtoR data-[state=open]:animate-moveRtoL"
         >
           <Dialog.Title className="text-lg font-bold">Navigation Menu</Dialog.Title>
-          <ul className="mt-20 flex flex-col items-center gap-y-4" role="navigation">
+          <ul className="mt-20 flex flex-col items-center gap-y-6" role="navigation">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.label}
@@ -35,7 +35,8 @@ const MobileNavigation = () => {
               </a>
             ))}
             <a
-              className="inline-flex gap-x-1 rounded-lg border border-transparent bg-cyan-300 px-2 py-2 text-sm text-slate-900 shadow-md transition-colors duration-300 hover:bg-cyan-400 focus:outline-none"
+              className="inline-flex gap-x-1 rounded-lg border border-transparent bg-cyan-300 px-2 py-2 text-sm text-slate-900 shadow-sm shadow-slate-300
+              transition-colors duration-300 hover:bg-cyan-400 focus:outline-none active:bg-cyan-500 active:shadow-inner"
               href="/resume.pdf"
               target="_blank"
               rel="noopener"
