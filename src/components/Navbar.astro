@@ -5,7 +5,7 @@ import LogoSVG from "~/assets/logo.astro";
 import { NAV_LINKS } from "~/configuration";
 ---
 
-<nav
+<header
   class="sticky top-0 flex h-[80px] items-center justify-between bg-slate-900/90 px-5 backdrop-blur lg:px-10"
 >
   <div class="h-[48px] w-[42px]">
@@ -14,18 +14,20 @@ import { NAV_LINKS } from "~/configuration";
   <div class="md:hidden">
     <MobileNavigation client:only="react" />
   </div>
-  <ul class="hidden gap-x-10 md:flex" role="navigation">
-    {
-      NAV_LINKS.map((link) => (
-        <div class="relative pb-1">
-          <a
-            class="duration-300 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-violet-500 after:transition-transform hover:text-cyan-200 hover:after:origin-bottom-left hover:after:scale-100"
-            href={link.href}
-          >
-            {link.label}
-          </a>
-        </div>
-      ))
-    }
-  </ul>
-</nav>
+  <nav class="hidden md:block">
+    <ul class="flex gap-x-10">
+      {
+        NAV_LINKS.map((link) => (
+          <div class="relative pb-1">
+            <a
+              class="duration-300 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-violet-500 after:transition-transform hover:text-cyan-200 hover:after:origin-bottom-left hover:after:scale-100"
+              href={link.href}
+            >
+              {link.label}
+            </a>
+          </div>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
