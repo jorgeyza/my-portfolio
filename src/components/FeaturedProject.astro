@@ -22,8 +22,6 @@ interface Props {
 }
 
 const { title, description, tags, image, links, flexDirectionClass } = Astro.props;
-const iconsPositioningClass =
-  flexDirectionClass === "md:flex-row" ? "md:justify-start" : "md:justify-end";
 const imageSrc = await findImage(image.url);
 ---
 
@@ -40,7 +38,12 @@ const imageSrc = await findImage(image.url);
         ))
       }
     </div>
-    <div class={`mt-3 lg:mt-4 flex gap-x-4 justify-end ${iconsPositioningClass}`}>
+    <div
+      class:list={[
+        "mt-3 lg:mt-4 flex gap-x-4 justify-end",
+        { "md:justify-start": flexDirectionClass === "md:flex-row" },
+      ]}
+    >
       {
         Boolean(links.github) && (
           <a
