@@ -21,6 +21,7 @@ const MobileNavigation = () => {
         <Dialog.Content
           aria-describedby={undefined}
           className="fixed right-0 top-0 h-screen w-[200px] bg-slate-800 p-6 transition-opacity focus:outline-none data-[state=closed]:animate-moveLtoR data-[state=open]:animate-moveRtoL"
+          onCloseAutoFocus={(event) => event?.preventDefault()}
         >
           <Dialog.Title className="text-lg font-bold">Navigation Menu</Dialog.Title>
           <nav>
