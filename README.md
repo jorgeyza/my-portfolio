@@ -6,7 +6,7 @@
 pnpm dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Made with Astro. Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
 ## 🧞 Commands
 
@@ -23,7 +23,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## 🗄️Dependencies
 
-[Astro]('https://docs.astro.build/en/concepts/why-astro/'): Astro is an all-in-one web framework for building fast, content-focused websites.
+[Astro](https://docs.astro.build/en/concepts/why-astro/): Astro is an all-in-one web framework for building fast, content-focused websites.
 
 [@astrojs/image](https://docs.astro.build/en/guides/integrations-guide/image/): For image optimization, with the use of `<Image />` and `<Picture>` components as well as a basic image transformer.
 
