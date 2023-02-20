@@ -13,7 +13,7 @@ import GoogleAnalytics from "~/components/GoogleAnalytics.astro";
     <GoogleAnalytics />
     <SEO
       title="Jorge Eyzaguirre | Web developer"
-      description="My web development skills and portfolio"
+      description="I am Jorge Eyzaguirre, a full-stack web developer with experience, ready to deliver exceptional digital experiences."
       charset="UTF-8"
       canonical="https://jorgeyza.com"
       extend={{
@@ -25,6 +25,29 @@ import GoogleAnalytics from "~/components/GoogleAnalytics.astro";
           },
           { name: "generator", content: Astro.generator },
         ],
+      }}
+      openGraph={{
+        basic: {
+          type: "website",
+          url: "https://jorgeyza.com",
+          title: "Jorge's portfolio website",
+          image: "https://res.cloudinary.com/jorgeyza/image/upload/v1676923134/ogBanner_xqbbk1.png",
+        },
+        optional: {
+          description:
+            "I am Jorge Eyzaguirre, a full-stack web developer with experience, ready to deliver exceptional digital experiences.",
+        },
+        image: {
+          alt: "Portfolio website",
+        },
+      }}
+      twitter={{
+        card: "summary_large_image",
+        site: "https://jorgeyza.com",
+        title: "Jorge Eyzaguirre | Web developer",
+        description:
+          "I am Jorge Eyzaguirre, a full-stack web developer with experience, ready to deliver exceptional digital experiences.",
+        image: "https://res.cloudinary.com/jorgeyza/image/upload/v1676923134/ogBanner_xqbbk1.png",
       }}
     />
   </head>
