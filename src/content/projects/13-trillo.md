@@ -9,4 +9,5 @@ links:
   github: https://github.com/jorgeyza/trillo
   site: https://trillo.jorgeyza.com/
 isFeatured: false
+shouldShow: true
 ---

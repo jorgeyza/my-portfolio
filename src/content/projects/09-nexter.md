@@ -8,5 +8,6 @@ image:
 links:
   github: https://github.com/jorgeyza/nexter
   site: https://nexter.jorgeyza.com/
-isFeatured: false
+isFeatured: true
+shouldShow: true
 ---

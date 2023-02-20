@@ -8,5 +8,6 @@ image:
 links:
   github: https://github.com/jorgeyza/google-sheets-store
   site: https://google-sheets-store.jorgeyza.com/
-isFeatured: false
+isFeatured: true
+shouldShow: true
 ---

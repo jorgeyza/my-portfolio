@@ -9,4 +9,5 @@ links:
   github: https://github.com/jorgeyza/DevOps-with-Docker
   site: https://studies.cs.helsinki.fi/stats/api/certificate/docker2020/en/92d38e1215d2edc1d772e73f5055a39a
 isFeatured: false
+shouldShow: true
 ---

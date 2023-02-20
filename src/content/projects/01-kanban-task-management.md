@@ -22,4 +22,5 @@ links:
   github: https://github.com/jorgeyza
   site: https://jorgeyza.com
 isFeatured: true
+shouldShow: true
 ---

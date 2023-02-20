@@ -9,4 +9,5 @@ links:
   github: https://github.com/jorgeyza/Full-stack-open-2020
   site: https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/a77012a0e9a2d009070cf4ce1c5ac99f
 isFeatured: false
+shouldShow: true
 ---

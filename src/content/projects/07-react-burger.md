@@ -9,4 +9,5 @@ links:
   github: https://github.com/jorgeyza/react-burger
   site: https://react-burger.jorgeyza.com/
 isFeatured: true
+shouldShow: true
 ---

@@ -49,14 +49,15 @@ const projectsCollection = defineCollection({
       ])
     ),
     links: z.object({
-      github: z.string().url(),
-      site: z.string().url(),
+      github: z.string().url().nullable(),
+      site: z.string().url().nullable(),
     }),
     image: z.object({
       url: z.string(),
       alt: z.string(),
     }),
     isFeatured: z.boolean(),
+    shouldShow: z.boolean(),
   }),
 });
 

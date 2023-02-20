@@ -9,4 +9,5 @@ links:
   github: https://github.com/jorgeyza/metatagsio-clone
   site: https://metatags.jorgeyza.com/
 isFeatured: true
+shouldShow: true
 ---

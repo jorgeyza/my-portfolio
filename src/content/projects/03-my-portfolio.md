@@ -9,4 +9,5 @@ links:
   github: https://github.com/jorgeyza/my-portfolio
   site: https://jorgeyza.com
 isFeatured: true
+shouldShow: true
 ---

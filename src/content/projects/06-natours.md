@@ -9,4 +9,5 @@ links:
   github: https://github.com/jorgeyza/natours
   site: https://natours.jorgeyza.com/
 isFeatured: true
+shouldShow: true
 ---
