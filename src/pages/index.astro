@@ -30,17 +30,29 @@ const myPortfolio = await getEntryBySlug("projects", "03-my-portfolio");
   </main>
   <footer class="mt-20 flex flex-col items-center justify-center gap-y-5 text-center">
     <div class="flex gap-x-4 lg:hidden">
-      <a href={GITHUB} class="w-6 transition-all hover:scale-110 hover:text-cyan-200">
+      <a
+        href={GITHUB}
+        class="w-6 transition-all hover:scale-110 hover:text-cyan-200"
+        target="_blank"
+        rel="noopener"
+      >
         <GithubIcon />
       </a>
-      <a href={LINKEDIN} class="w-6 transition-all hover:scale-110 hover:text-cyan-200">
+      <a
+        href={LINKEDIN}
+        class="w-6 transition-all hover:scale-110 hover:text-cyan-200"
+        target="_blank"
+        rel="noopener"
+      >
         <LinkedinIcon />
       </a>
     </div>
     <div class="relative pb-1">
       <a
         class="after:bg-grad text-sm text-slate-300 duration-300 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gradient-to-r after:from-cyan-500 after:to-violet-500 after:transition-transform hover:text-cyan-200 hover:after:origin-bottom-left hover:after:scale-100"
-        href={myPortfolio.data.links.github}>Made by Jorge Eyzaguirre</a
+        href={myPortfolio.data.links.github}
+        target="_blank"
+        rel="noopener">Made by Jorge Eyzaguirre</a
       >
     </div>
   </footer>
