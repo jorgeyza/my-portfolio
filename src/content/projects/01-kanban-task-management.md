@@ -7,7 +7,7 @@ image:
   alt: Screenshot of the web project
 links:
   github: https://github.com/jorgeyza/kanban-task-manager
-  site:
+  site: https://kanban-task-manager.jorgeyza.com
 isFeatured: true
 shouldShow: true
 ---
