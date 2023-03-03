@@ -1,7 +1,7 @@
 ---
 title: metatags.io clone
 description: This is a partial clone of metatags.io frontend, a tool to debug and generate meta tag code for any website.
-tags: [NextJS, ChakraUI, TypeScript, Redux]
+tags: [NextJS, Chakra UI, TypeScript, Redux]
 image:
   url: ~/assets/projects/metatags.png
   alt: Screenshot of the web project
