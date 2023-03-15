@@ -42,6 +42,7 @@ const projectsCollection = defineCollection({
         "Jotai",
         "React Router",
         "TanStack Query",
+        "TanStack Virtual",
         "React Hook Form",
         "NextAuthJS",
         "CodeMirror",
