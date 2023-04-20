@@ -10,6 +10,7 @@ import graphql from "~/assets/skills/graphql.png";
 import html from "~/assets/skills/html.png";
 import javascript from "~/assets/skills/javascript.png";
 import mongodb from "~/assets/skills/mongodb.png";
+import mysql from "~/assets/skills/mysql.png";
 import nextjs from "~/assets/skills/nextjs.png";
 import node from "~/assets/skills/node.png";
 import prisma from "~/assets/skills/prisma.png";
@@ -42,6 +43,7 @@ const skills = [
   { src: docker, alt: "docker", label: "Docker" },
   { src: mongodb, alt: "mongodb", label: "MongoDB" },
   { src: postgresql, alt: "postgresql", label: "PostgreSQL" },
+  { src: mysql, alt: "mysql", label: "MySQL" },
   { src: strapi, alt: "strapi", label: "Strapi" },
   { src: figma, alt: "figma", label: "Figma" },
 ];
