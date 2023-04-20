@@ -8,6 +8,6 @@ image:
 links:
   github: https://github.com/jorgeyza/trillo
   site: https://trillo.jorgeyza.com/
-isFeatured: true
+isFeatured: false
 shouldShow: true
 ---
