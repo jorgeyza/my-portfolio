@@ -22,7 +22,7 @@ module.exports = {
         },
         slideBg: {
           "0%": { backgroundPosition: "0" },
-          "100%": { backgroundPosition: "30vw" },
+          "100%": { backgroundPosition: "40vw" },
         },
       },
       animation: {
