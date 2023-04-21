@@ -16,6 +16,7 @@ const projectsCollection = defineCollection({
         "Tailwind",
         "DaisyUI",
         "Radix",
+        "cva",
         "Cypress",
         "Jest",
         "React Testing Library",
