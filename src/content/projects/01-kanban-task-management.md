@@ -1,6 +1,6 @@
 ---
 title: Kanban task management
-description: A fully-functional task management web app with a light/dark mode toggle.
+description: A fully-functional task management with virtualized lists and a light/dark mode toggle.
 tags:
   [
     NextJS,
