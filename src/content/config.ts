@@ -48,7 +48,7 @@ const projectsCollection = defineCollection({
         "React Hook Form",
         "NextAuthJS",
         "CodeMirror",
-        "Nivo Charts",
+        "nivo",
         "Vercel",
         "Railway",
         "Netlify",

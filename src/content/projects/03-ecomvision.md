@@ -12,7 +12,7 @@ tags:
     tRPC,
     Vercel,
     Jotai,
-    Nivo Charts,
+    nivo,
     TanStack Table,
     Docker,
   ]
