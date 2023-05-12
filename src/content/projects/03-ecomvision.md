@@ -3,7 +3,7 @@ title: Ecomvision
 description: A full stack admin dashboard with line, pie, and geo charts, and tables with pagination that can be sorted and filtered.
 tags:
   [
-    NextJS,
+    Next.js,
     TypeScript,
     Chakra UI,
     MongoDB,

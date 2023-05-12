@@ -3,7 +3,7 @@ title: Kanban task management
 description: A fully-functional task management app with virtualized lists, forms to create and edit tasks, and a light/dark mode toggle.
 tags:
   [
-    NextJS,
+    Next.js,
     TypeScript,
     Chakra UI,
     PlanetScale,
