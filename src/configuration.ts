@@ -15,4 +15,4 @@ export const NAV_LINKS = [
 
 export const EMAIL = "jorgeyzadev@gmail.com";
 export const GITHUB = "https://github.com/jorgeyza";
-export const LINKEDIN = "https://www.linkedin.com/in/jorge-alonso-eyzaguirre-herrera-9a1743127/";
+export const LINKEDIN = "https://www.linkedin.com/in/jorge-eyzaguirre/";
