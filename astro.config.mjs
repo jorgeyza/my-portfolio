@@ -2,7 +2,6 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import image from "@astrojs/image";
 import react from "@astrojs/react";
 import partytown from "@astrojs/partytown";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -14,9 +13,6 @@ export default defineConfig({
       config: {
         applyBaseStyles: false,
       },
-    }),
-    image({
-      serviceEntryPoint: "@astrojs/image/sharp",
     }),
     react(),
     //https://partytown.builder.io/forwarding-events
